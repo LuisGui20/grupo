@@ -4,48 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grupo Castelo Branco</title>
-    <link rel="stylesheet" href="style.css">
+    <title>MV TUR- Passeis e Guia Turísticos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="jquery/jquery.js"></script>
+    <script src="index.js"></script>
+   
 </head>
 <body>
-    
-    <div class="header">
-
-        <div class="logo">
-                <h1>DVC</h1>
-                <img src="imagens/logo.png">
-        </div><!--logo-->
-
-        <div class="navegacao">
+    <div class="container-principal">
+        <div class="barra-nvg">
             <ul>
                 <li>
-                    <a href="">Vagas</a>
+                    <a href="#">Página Inicial </a>
+                    
+                </li>
+
+                <li>
+                    <a href="#">Passeios <span><img src="img/arrowdownoutline_110891.ico" alt="" width="23px"></span></a>
+                    <div class="opcoes" id="op-passeios">
+                        <h1> ¨Arpoador</h1>
+                        <h1>¨Barraca do Belo</h1>
+                        <h1>¨Dunas </h1>
+                        <h1>¨Lagoas</h1>
+                        <h1>¨Praia do Amor</h1>
+                        <h1>¨Pousadas</h1>
+                    </div>
                 </li>
                 <li>
-                    <a href="">Empresa</a>
+                    <a href="#">Fotos</a>
                 </li>
                 <li>
-                    <a href="">Leis e Deficiência</a>
+                    <a href="#">Rotas <span><img src="img/arrowdownoutline_110891.ico" alt="" width="23px"></span></a>
                 </li>
                 <li>
-                    <a href="">Clientes</a>
-                </li>
-                <li>
-                    <a href="">Contato</a>
-                </li>
-                <li>
-                    <a href="">Blog</a>
-                </li>
-                <li>
-                    <a href=""><span>Enviar Curriculum</span></a>
-                </li>
-                <li>
-                    <a href=""><span>Registro</span></a>
+                    <a href="#">Contato</a>
                 </li>
             </ul>
         </div>
-    </div><!--header-->
+    </div><!--container-principal-->
 
-    <div class="main"></div>
+    <div class="main">
+        <div class="form-container">
+            <form>
+                <input type="text" name="nome" placeholder="Seu nome">
+                <input type="number" name="telefone" placeholder="Numero de Telefone">
+                <input type="submit" name="acao" placeholder="Enviar">
+            </form>
+        </div><!--form-container-->
+    </div><!--main-->
 </body>
 </html>

@@ -5,49 +5,58 @@
 }
 html,body{
     height: 100%;
+    background-color: rgb(255, 249, 241);
+    
 }
-.header{
+.container-principal{
     width: 100%;
-    max-width: 1920px;
+    max-width: 900px;
+    height: 90px;
+    margin: 0 auto;
+    border-radius: 30px;
+    border: 1px solid rgb(155, 213, 236);
+    background-color: #00c3ff;
+
+}
+.container-principal .barra-nvg ul {
     display: flex;
     justify-content: space-around;
-    background-image: url(imagens/empresa.png);
-    background-position: center;
-    font-family: Arial, Helvetica, sans-serif;
+    list-style-type:none;
+    line-height: 80px;
 }
-.header>.logo{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: yellowgreen;
-}
-.header >.logo >img{
-    width: 60px;
-}
-
-.header>.navegacao>ul{
-    display: flex;
-    line-height: 100px;  
-    list-style-type: none; 
-}
-.header>.navegacao>ul >li a{
-    
-    margin: 5px;
-    padding: 10px 30px;
+.container-principal .barra-nvg ul li a{
     text-decoration: none;
-    color: white;
-    background-color:rgb(22,33,55,0.7);
-    border: 1px solid rgb(77, 76, 76);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
 }
-.header>.navegacao>ul>li>a>span{
-    padding: 10px;
-    background-color: rgb(115, 255, 0);
-
+.container-principal .barra-nvg ul li a:hover{
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+.container-principal .barra-nvg .opcoes{
+    display: none;
+    width: 400px;
+    background-color: rgb(34, 31, 31);
+    border-radius: 20px;
+    border: 1px solid black;
+    height: 200px;
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+    font-weight: normal;
+    line-height: 30px;
 }
 .main{
-    background-image: url(imagens/alesia-kazantceva-VWcPlbHglYc-unsplash.jpg);
-    background-position: center;
-    background-size: cover;
     width: 100%;
-    height: 900px;
-
-
+    height: 710px;
+    background-image: url(/img/foto1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.main .form-container{
+    width:300px;
+    height: 200px;
+    background-color: aliceblue;
 }
